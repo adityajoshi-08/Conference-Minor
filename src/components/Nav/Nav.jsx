@@ -19,16 +19,16 @@ export default function Nav() {
           <a href="/#partners">PARTNERS</a>
         </div>
         <div class="sideElement">
-          <a href="">TRACK</a>
+          <a href="/">TRACK</a>
         </div>
         <div class="sideElement">
           <a href="/#speakers">SPEAKERS</a>
         </div>
         <div class="sideElement">
-          <a href="">COMMITEE</a>
+          <a href="/">COMMITEE</a>
         </div>
         <div class="sideElement">
-          <a href="">PREVIOUS CONFERENCES</a>
+          <a href="/">PREVIOUS CONFERENCES</a>
         </div>
         <div class="sideElement">
           <a href="/#contact">CONTACT</a>

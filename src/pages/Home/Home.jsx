@@ -37,7 +37,7 @@ export default function Home() {
     }, 10000); // 10 seconds interval
 
     return () => clearInterval(intervalId); // Cleanup on component unmount
-  }, []);
+  }, [backgrounds.length]);
 
   return (
     <>
