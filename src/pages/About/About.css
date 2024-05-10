@@ -1,0 +1,42 @@
+/* .wrapper, .aboutMain {
+    width: 70vw;
+    margin: auto;
+} */
+
+.aboutMain {
+    margin-top: 5vh;
+}
+
+.aboutContainer {
+    width: 80vw;
+    margin: auto;
+}
+
+.aboutUsTag {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 5vh;
+}
+
+.aboutUsTagText {
+    font-size: 50px;
+    color: #4874d0;
+}
+
+.aboutUsTagHR {
+    width: 30%;
+    height: 1px;
+    background-color: black;
+    border: none;
+}
+
+.aboutConference h2 {
+    color: #4874d0;
+    font-size: 35px;
+}
+
+.aboutConferenceSection {
+    margin-top: 2.5vh;
+}

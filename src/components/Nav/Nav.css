@@ -1,0 +1,40 @@
+nav {
+    background-color: rgba(255, 255, 255, 0.0);
+    border-radius: 10px;
+    height: 8vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.sideWale {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav .logo {
+    max-width: 10%;
+    cursor: pointer;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    width: 80vw;
+}
+
+.sideElement a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+}

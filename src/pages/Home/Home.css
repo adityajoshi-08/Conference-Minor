@@ -1,0 +1,246 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: poppins, "sans-serif";
+}
+
+
+
+
+.sideWale {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav .logo {
+    max-width: 10%;
+    cursor: pointer;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    width: 80vw;
+}
+
+.sideElement a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.main {
+    
+    transition: background-image 2s ease-in-out;
+    background-repeat: no-repeat;
+
+}
+
+.main .registrations {
+    padding: 5px;
+    margin-top: 5px;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.55);
+}
+
+.conferceInfoMain {
+    padding: 25px 10px;
+    width: 80%;
+    background-color: rgb(0, 0, 0, 0.55);
+    color: white;
+}
+
+.conferceInfoMain span {
+    font-size: 20px;
+}
+
+#conferenceNameSpanMain {
+    font-size: 25px;
+}
+
+#conferenceNameSpanMain h3 {
+    font-family: "Raleway", sans-serif;
+}
+
+/* .datesMain {
+    font-weight: bold;
+} */
+
+.locationMain a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.locationMain a:hover {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.launchTime {
+    display: flex;
+    margin-top: 10px;
+    background-color: rgb(0, 0, 0, 0.55);
+    padding: 25px;
+    color: white;
+}
+
+.launchTimeSingleBlock {
+    margin: 0px 20px;
+}
+
+.launchTimeSingleBlock p {
+    font-size: 30px;
+}
+
+#partners {
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    margin-top: 13vh;
+}
+
+.organisingPartners,
+.sponsorPartners {
+    flex: 1;
+    display: flex;
+}
+
+.organisingPartner img,
+.sponsorPartner img {
+    width: 85%;
+}
+
+.orgyPartner {
+    text-align: center;
+    font-size: x-large;
+    color: #443f3f;
+}
+
+.speakers {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+
+.containerSpeaker {
+    max-width: 65vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.individualPhoto {
+    position: relative;
+
+}
+
+.speakerPhotoRow {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.speakerPhoto {
+    margin-top: 30px;
+}
+
+.speakerPhotoRow a img {
+    width: 80%;
+}
+
+.speakerPhotoRow img {
+    border-radius: 15% 0 15% 0;
+    cursor: pointer;
+    display: block;
+}
+
+.content {
+    width: 80%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15% 0 15% 0;
+    opacity: 0;
+    transition: 0.6s;
+}
+
+.content:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.content {
+    color: white;
+}
+
+#contact {
+    background: url("../../../public/images/Backgrounds/bg-pattern-3.jpg");
+    background-repeat: repeat;
+    height: 35vh;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    justify-content: center;
+}
+
+
+.contactContainer {
+    text-align: center;
+}
+
+.joinUs {
+    display: flex;
+    margin: 20px 0px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.joinUsContainer {
+    max-width: 80vw;
+    margin: auto;
+    text-align: center;
+}
+
+.joinUsContainerRow {
+    margin-top: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.CFP {
+    background: url("../../../public/images/Backgrounds/bg-pattern-3.jpg");
+    width: 25%;
+    padding: 25px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.CFP button {
+    margin-top: 10px;
+    align-items: flex-end;
+    cursor: pointer;
+}
+
+footer {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+}

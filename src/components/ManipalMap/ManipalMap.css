@@ -1,0 +1,9 @@
+.map {
+    margin: 5vh 0;
+    display: flex;
+    justify-content: center;
+}
+
+.map iframe {
+    border: none;border-radius: 20px;
+}
