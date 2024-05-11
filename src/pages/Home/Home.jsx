@@ -3,12 +3,13 @@ import Nav from '../../components/Nav/Nav'
 import Footer from '../../components/Footer/Footer';
 import ManipalMap from '../../components/ManipalMap/ManipalMap';
 import React, { useState, useEffect } from 'react';
-import Speaker from "../../components/Speaker/Speaker";
+import Panelist from "../../components/Panelist/Panelist";
 import data from "../../data/humans.json";
 
 export default function Home() {
+                console.log(data[0]["speakers"]);
   
-  useEffect(() => {
+    useEffect(() => {
     const countDownDate = new Date("Oct 23, 2024 00:00:00").getTime();
     const intervalId = setInterval(() => {
       var now = new Date().getTime();
@@ -28,6 +29,9 @@ export default function Home() {
 
     return () => clearInterval(intervalId); // Cleanup on component unmount
   }, []);
+
+
+
 
   const [backgroundIndex, setBackgroundIndex] = useState(0);
   const backgrounds = ["one","two","three"];
@@ -130,15 +134,11 @@ export default function Home() {
         <div class="containerSpeaker">
           <h1>OUR SPEAKERS</h1>
           <div className="speakerPhotoRow">
-            {
-            data[0]["speakers"].map((speaker) => {
-              return (
-                  <Speaker name={speaker.name} image={speaker.image} />
-              )
-            
-              }
-            )
-          }
+            {data[0]["speaker"].map((panelist) => {
+                    return (
+                        <Panelist name={panelist.name} image={panelist.image} profile={panelist.profile} />
+                    )
+                })}
           </div>
           
         </div>
