@@ -17,8 +17,8 @@
     margin-bottom: 30px;
     flex-wrap: wrap;
     flex-basis: 100%;
-    align-items: center;
-    justify-items: space-evenly;
+    justify-content: space-evenly;
+    max-width: 70vw;
 }
 
 .speakerPhotoRow a img {

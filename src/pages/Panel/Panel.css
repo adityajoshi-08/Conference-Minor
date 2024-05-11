@@ -45,6 +45,8 @@
 .panelGrid{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 70vw;
 }
 
 #active {
