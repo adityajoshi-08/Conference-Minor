@@ -8,8 +8,12 @@ nav {
     top: 0;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     margin-top: 10px;
+}
+
+nav img {
+    width: 50px;
 }
 
 .sideWale {
@@ -18,7 +22,7 @@ nav {
 }
 
 nav .logo {
-    max-width: 10%;
+    max-width: 40%;
     cursor: pointer;
 }
 
@@ -26,9 +30,6 @@ nav .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.container {
     width: 80vw;
 }
 
@@ -37,4 +38,56 @@ nav .container {
     color: black;
     font-weight: 600;
     font-size: 20px;
+    transition: color 0.4s ease-in-out;
+}
+
+.sideElement a:hover {
+    color: #F5F5F1;
+}
+
+nav .menu {
+    position: absolute;
+    top: 0.75rem;
+    right: 1.5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 2rem;
+}
+
+nav .menu span {
+    height: 0.4rem;
+    width: 100%;
+    background-color: white;
+    border-radius: 0.2rem;
+}
+
+@media (max-width: 1300px) {
+    nav .menu {
+        display: flex;
+    }
+    nav img {
+        width: 5000px;
+    }
+    nav {
+        flex-direction: column;
+        height: fit-content;
+        /* background-color: white; */
+    }
+
+    nav .container {
+        display: none;
+        flex-direction: column;
+        align-items: start;
+        width: 50%;
+        margin-bottom: 0.25rem;
+        align-self: flex-start;
+        margin-left: 2vw;
+    }
+
+    nav #container#open {
+        display: flex;
+    }
+
 }

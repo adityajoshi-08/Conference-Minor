@@ -2,8 +2,28 @@ import React from 'react'
 import "./About.css"
 import Nav from '../../components/Nav/Nav'
 import Footer from '../../components/Footer/Footer'
+import Objective from '../../components/Objective/Objective'
 
 export default function About() {
+
+    const objectives = [
+        {
+            iconAddress: "images/icons/1.png",
+            objectiveContent: "Facilitate knowledge sharing among researchers."
+        },
+        {
+            iconAddress: "images/icons/2.png",
+            objectiveContent: "Showcase cutting-edge research in cognitive science and AI."
+        },
+        {
+            iconAddress: "images/icons/3.png",
+            objectiveContent: "Explore the societal implications of AI technologies."
+        },
+        {
+            iconAddress: "images/icons/4.png",
+            objectiveContent: "Foster collaborations between academia and industry."
+        }
+    ]
   return (
     <>
       <Nav />
@@ -35,12 +55,12 @@ export default function About() {
                     </div>
                     
                     <div class="aboutConferenceSectionContent">
-                        <ul>
-                            <li>Facilitate knowledge sharing and networking among researchers and practitioners.</li>
-                            <li>Showcase cutting-edge research and innovations in cognitive science and artificial intelligence.</li>
-                            <li>Explore the societal implications and ethical considerations of AI technologies.</li>
-                            <li>Foster collaborations between academia, industry, and government organizations.</li>
-                        </ul>
+                        
+                        {objectives.map((objective) => {
+                            return (
+                                <Objective iconAddress={objective.iconAddress} content={objective.objectiveContent}/>
+                            )
+                        })}
                     </div>
                 </div>
                 

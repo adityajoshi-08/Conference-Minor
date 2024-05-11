@@ -1,0 +1,100 @@
+nav {
+    background-color: rgba(255, 255, 255, 0.0);
+    /* Adjust background color if needed */
+    border-radius: 10px;
+    height: 8vh;
+    width: 90vw;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0 1rem;
+    margin: auto;
+    /* Add some padding for better look */
+}
+
+nav img {
+    width: 20%;
+}
+.logo {
+    /* max-width: 10%; */
+    cursor: pointer;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    /* padding-right: 5vw; */
+}
+
+li {
+    margin-right: 1rem;
+    /* Add margin for better spacing */
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+    transition: color 0.4s ease-in-out;
+}
+
+a:hover {
+    color: #f5f5f1;
+}
+
+.menuToggle {
+    display: none;
+}
+
+/* Mobile Menu Styles */
+@media (max-width: 1000px) {
+
+   
+
+    .menuToggle {
+        display: block;
+        /* Show toggle button on small screens */
+        background: none;
+        z-index: 10;
+        border: none;
+        color: black;
+        font-size: 3rem;
+        cursor: pointer;
+    }
+     ul {
+        display: none;
+        
+        /* Hide menu on small screens */
+    }
+
+    ul.active {
+        display: flex;
+        transition: all 0.4s ease-in-out;
+        
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            position: absolute;
+            top: 0;
+            right: -7vw;
+            width: 40vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Add background color for overlay */
+            padding: 1rem;
+    }
+
+    ul.active a {
+        color: white;
+        transition: color 0.4s ease-in-out;
+    }
+
+        ul.active a:hover {
+            color: black;
+        }
+}

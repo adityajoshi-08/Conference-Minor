@@ -1,40 +1,46 @@
-import React from 'react'
-import "./Nav.css"
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
+import "./Nav1.css"
+// import "./Nav.css"
 
-export default function Nav() {
+export default function Nav() {  
+  const [isOpen, setIsOpen] = useState(false); // State for mobile menu toggle
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <>
     <nav>
-      <div class="container">
-        <img src="images/logos/ICCAI_Logo.png" alt="" class="logo" />
-
-
-        <div class="sideElement">
-          <a href="/">HOME</a>
-        </div>
-        <div class="sideElement">
-          <a href="/about">ABOUT</a>
-        </div>
-        <div class="sideElement">
-          <a href="/#partners">PARTNERS</a>
-        </div>
-        <div class="sideElement">
-          <a href="/">TRACK</a>
-        </div>
-        <div class="sideElement">
-          <a href="/#speakers">SPEAKERS</a>
-        </div>
-        <div class="sideElement">
-          <a href="/">COMMITEE</a>
-        </div>
-        <div class="sideElement">
-          <a href="/">PREVIOUS CONFERENCES</a>
-        </div>
-        <div class="sideElement">
-          <a href="/#contact">CONTACT</a>
-        </div>
-      </div>
-    </nav>
-    </>
-  )
+      <Link to="/">
+        <img src="images/logos/ICCAI_Logo.png" alt="" className="logo" />
+      </Link>
+      <ul className={isOpen ? 'active' : ''}>  {/* Add active class for mobile menu */}
+        <li>
+          <Link to="/home">HOME</Link>
+        </li>
+        <li>
+          <Link to="/about">ABOUT </Link>
+        </li>
+        <li>
+          <Link to="/#partners">PARTNERS</Link>
+        </li>
+        <li>
+          <Link to="/speakers">SPEAKERS</Link>
+        </li>
+        <li>
+          <Link to="/tracks">TRACKS</Link>
+        </li>
+        <li>
+          <Link to="/commitee">COMMITEE</Link>
+        </li>
+        <li>
+          <Link to="/#contact">CONTACT</Link>
+        </li>
+      </ul>
+      {/* Mobile menu toggle button */}
+      <button className="menuToggle" onClick={toggleMenu}>
+        {isOpen ? <span>&times;</span> : <span>&#9776;</span>}
+      </button>
+    </nav>)
 }

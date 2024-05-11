@@ -4,7 +4,7 @@
 } */
 
 .aboutMain {
-    margin-top: 5vh;
+    margin:15vh 0vh;
 }
 
 .aboutContainer {
@@ -21,7 +21,7 @@
 }
 
 .aboutUsTagText {
-    font-size: 50px;
+    font-size: 60px;
     color: #4874d0;
 }
 
@@ -34,9 +34,19 @@
 
 .aboutConference h2 {
     color: #4874d0;
-    font-size: 35px;
+    font-size: 40px;
 }
 
 .aboutConferenceSection {
-    margin-top: 2.5vh;
+    margin: 3vh 0;
 }
+
+.aboutConferenceSectionContent {
+    font-size: 20px;
+    margin-top: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+

@@ -5,6 +5,7 @@ import Nav from '../../components/Nav/Nav'
 import Footer from '../../components/Footer/Footer';
 import ManipalMap from '../../components/ManipalMap/ManipalMap';
 import React, { useState, useEffect } from 'react';
+import Speaker from "../../components/Speaker/Speaker";
 
 
 export default function Home() {
@@ -39,6 +40,12 @@ export default function Home() {
     return () => clearInterval(intervalId); // Cleanup on component unmount
   }, [backgrounds.length]);
 
+      const speakers = [
+        {"name": "Dr. Phayung Meesad", "image": "images/speakers/images/Phayung Meesad.png"},
+        {"name": "Dr. Dharam Singh Jat", "image": "images/speakers/images/Dharam Singh Jat.png"},
+        {"name": "Dr. Durga Mohapatra", "image": "images/speakers/images/Durga Prasad Mohapatra.jpeg"}
+    ]
+
   return (
     <>
       <Nav />
@@ -46,9 +53,9 @@ export default function Home() {
       <div className="main"
         style={{
           background: `url("${process.env.PUBLIC_URL}/images/Backgrounds/${backgrounds[backgroundIndex]}.jpg")`,
-          backgroundSize: 'cover',
+          // backgroundSize: 'cover',
           height: '100vh',
-          width: '100%',
+          width: '100vw',
           textAlign: 'center',
           display: 'flex',
           flexDirection: 'column',
@@ -99,7 +106,7 @@ export default function Home() {
 
       <div id="partners">
         <div class="orgyPartner">
-          <h3>ORGANISER PARTNER</h3>
+          <h3>ORGANISING PARTNERS</h3>
           <div class="organisingPartners">
             <div class="organisingPartner">
               <img src="images/logos/GDSC Logo Full.png" alt="" />
@@ -111,7 +118,7 @@ export default function Home() {
         </div>
 
         <div class="orgyPartner">
-          <h3>SPONSOR PARTNER</h3>
+          <h3>SPONSOR PARTNERS</h3>
           <div class="sponsorPartners">
             <div class="sponsorPartner">
               <img src="images/logos/GDSC Logo Full.png" alt="" />
@@ -126,45 +133,18 @@ export default function Home() {
       <div id="speakers">
         <div class="containerSpeaker">
           <h1>OUR SPEAKERS</h1>
-          <div class="speakerPhoto">
-            <div class="speakerPhotoRow">
-              <div class="individualPhoto">
-                <a href="/speaker.html" target="_blank">
-                  <img
-                    src="images/speakers/images/Phayung Meesad.png"
-                    alt="Phayung Meesad"
-                  />
-                  <div class="content">
-                    <h4>Dr. Phayung Meesad</h4>
-                  </div>
-                </a>
-              </div>
-
-              <div class="individualPhoto">
-                <a href="/speaker.html" target="_blank">
-                  <img
-                    src="images/speakers/images/Dharam Singh Jat.png"
-                    alt="Dharam Singh Jat"
-                  />
-                  <div class="content">
-                    <h4>Dr. Dharam Singh Jat</h4>
-                  </div>
-                </a>
-              </div>
-
-              <div class="individualPhoto">
-                <a href="/speaker.html" target="_blank">
-                  <img
-                    src="images/speakers/images/Durga Prasad Mohapatra.jpeg"
-                    alt="Durga Prasad Mohapatra"
-                  />
-                  <div class="content">
-                    <h4>Dr. Durga Mohapatra</h4>
-                  </div>
-                </a>
-              </div>
-            </div>
+          <div className="speakerPhotoRow">
+            {
+            speakers.map((speaker) => {
+              return (
+                  <Speaker name={speaker.name} image={speaker.image} />
+              )
+            
+              }
+            )
+          }
           </div>
+          
         </div>
       </div>
 
