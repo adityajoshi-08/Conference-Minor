@@ -1,0 +1,28 @@
+.panelist {
+    max-width: fit-content;
+    margin: 1.5rem;
+}
+
+.panelistContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.panelist h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: black;
+}
+
+.panelist a {
+    width: 13vw;
+    height: 13vw;
+    margin-bottom: 0.5rem;
+}
+.panelist img {
+    width: 100%;
+    border-radius: 20% 5% 20% 5%;
+    cursor: pointer;
+    display: block;
+}

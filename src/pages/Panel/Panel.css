@@ -1,0 +1,58 @@
+.heading {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #4874d0
+}
+
+.headingTag {
+    margin: auto;
+
+    margin-top: 13vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 5vh;
+}
+
+.headingHR {
+    width: 30%;
+    height: 1px;
+    background-color: black;
+    border: none;
+}
+
+.panelContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.panelSelector {
+    width: 40vw;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5vh;
+}
+
+.panelSelectorContent {
+    cursor: pointer;
+    padding: 5px 20px;
+    border-radius: 2rem;
+}
+
+
+.panelGrid{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#active {
+    background-color: black;
+    color: white;
+}
+
+Footer {
+    position: fixed;
+    bottom: 0;
+}

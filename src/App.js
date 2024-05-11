@@ -3,6 +3,8 @@ import Home from './pages/Home/Home.jsx';
 import About from './pages/About/About.jsx';
 import './App.css';
 import Speakers from './pages/Speakers/Speakers.jsx';
+import Tracks from './pages/Tracks/Tracks.jsx';
+import Panel from './pages/Panel/Panel.jsx';
 
 function App() {
   const router = createBrowserRouter([
@@ -17,6 +19,14 @@ function App() {
     {
       path: "/speakers",
       element: <Speakers />
+    },
+    {
+      path: "/tracks",
+      element: <Tracks />
+    },
+    {
+      path: "/panel",
+      element: <Panel />
     }
   ])
   return (

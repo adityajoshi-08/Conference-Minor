@@ -1,0 +1,23 @@
+.heading {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #4874d0
+}
+
+.headingTag {
+    margin: auto;
+
+    margin-top: 13vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 5vh;
+}
+
+.headingHR {
+    width: 30%;
+    height: 1px;
+    background-color: black;
+    border: none;
+}

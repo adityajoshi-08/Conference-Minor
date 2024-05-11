@@ -1,0 +1,8 @@
+.tracks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 4vh auto;
+    max-width: 1200px;
+
+}

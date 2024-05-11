@@ -1,31 +1,33 @@
-/* eslint-disable no-whitespace-before-property */
-/* eslint-disable jsx-a11y/iframe-has-title */
 import "./Home.css"
 import Nav from '../../components/Nav/Nav'
 import Footer from '../../components/Footer/Footer';
 import ManipalMap from '../../components/ManipalMap/ManipalMap';
 import React, { useState, useEffect } from 'react';
 import Speaker from "../../components/Speaker/Speaker";
-
+import data from "../../data/humans.json";
 
 export default function Home() {
+  
+  useEffect(() => {
+    const countDownDate = new Date("Oct 23, 2024 00:00:00").getTime();
+    const intervalId = setInterval(() => {
+      var now = new Date().getTime();
+      var distance = countDownDate - now;
 
-  var countDownDate = new Date("Oct 23, 2024 00:00:00").getTime();
-  setInterval(function() {
-    var now = new Date().getTime();
-    var distance = countDownDate - now;
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24)) ;
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)) ;
+      var seconds = Math.floor ((distance % (1000 * 60)) / 1000);
 
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24)) ;
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)) ;
-    var seconds = Math.floor ((distance % (1000 * 60)) / 1000);
+      document.getElementById("days").innerHTML = days;
+      document.getElementById("hours").innerHTML = hours;
+      document.getElementById("minutes").innerHTML = minutes;
+      document.getElementById("seconds").innerHTML = seconds;
 
-    document.getElementById("days").innerHTML = days;
-    document. getElementById ("hours").innerHTML = hours;
-    document.getElementById("minutes").innerHTML = minutes;
-    document.getElementById("seconds").innerHTML = seconds;
+    }, 1000);
 
-}, 1000);
+    return () => clearInterval(intervalId); // Cleanup on component unmount
+  }, []);
 
   const [backgroundIndex, setBackgroundIndex] = useState(0);
   const backgrounds = ["one","two","three"];
@@ -39,12 +41,6 @@ export default function Home() {
 
     return () => clearInterval(intervalId); // Cleanup on component unmount
   }, [backgrounds.length]);
-
-      const speakers = [
-        {"name": "Dr. Phayung Meesad", "image": "images/speakers/images/Phayung Meesad.png"},
-        {"name": "Dr. Dharam Singh Jat", "image": "images/speakers/images/Dharam Singh Jat.png"},
-        {"name": "Dr. Durga Mohapatra", "image": "images/speakers/images/Durga Prasad Mohapatra.jpeg"}
-    ]
 
   return (
     <>
@@ -135,7 +131,7 @@ export default function Home() {
           <h1>OUR SPEAKERS</h1>
           <div className="speakerPhotoRow">
             {
-            speakers.map((speaker) => {
+            data[0]["speakers"].map((speaker) => {
               return (
                   <Speaker name={speaker.name} image={speaker.image} />
               )

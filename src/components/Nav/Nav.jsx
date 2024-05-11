@@ -17,26 +17,24 @@ export default function Nav() {
       </Link>
       <ul className={isOpen ? 'active' : ''}>  {/* Add active class for mobile menu */}
         <li>
-          <Link to="/home">HOME</Link>
-        </li>
-        <li>
-          <Link to="/about">ABOUT </Link>
-        </li>
-        <li>
-          <Link to="/#partners">PARTNERS</Link>
-        </li>
-        <li>
-          <Link to="/speakers">SPEAKERS</Link>
-        </li>
-        <li>
-          <Link to="/tracks">TRACKS</Link>
-        </li>
-        <li>
-          <Link to="/commitee">COMMITEE</Link>
-        </li>
-        <li>
-          <Link to="/#contact">CONTACT</Link>
-        </li>
+            <a href="/">HOME</a>
+          </li>
+          <li>
+            <a href="/about">ABOUT</a>
+          </li>
+          <li>
+            <a href="/#partners">PARTNERS</a>
+          </li>
+          <li>
+            <a href="/panel">PANEL</a>
+          </li>
+          <li>
+            <a href="/tracks">TRACKS</a>
+          </li>
+          <li>
+            <a href="/#contact">CONTACT</a>
+          </li>
+
       </ul>
       {/* Mobile menu toggle button */}
       <button className="menuToggle" onClick={toggleMenu}>

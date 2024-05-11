@@ -1,0 +1,16 @@
+[
+    {
+        "speaker": [
+            {"name": "Dr. Dharam Singh Jat", "image": "images/speakers/images/Dharam Singh Jat.png", "profile":"https://scholar.google.com/citations?user=juc4TG0AAAAJ&hl=en"},
+            {"name": "Dr. Phayung Meesad", "image": "images/speakers/images/Phayung Meesad.png", "profile": "https://www.linkedin.com/in/phayung-meesad-5b035194/"},
+            {"name": "Dr. Durga Mohapatra", "image": "images/speakers/images/Durga Prasad Mohapatra.jpeg", "profile":"https://www.linkedin.com/in/durga-prasad-mohapatra-9066932a5/"}
+        ],
+        "organiser": [
+            {"name": "Dr. Dharam Singh Jat", "image": "images/speakers/images/Dharam Singh Jat.png", "profile":"https://scholar.google.com/citations?user=juc4TG0AAAAJ&hl=en"},
+            {"name": "Dr. Phayung Meesad", "image": "images/speakers/images/Phayung Meesad.png", "profile": "https://www.linkedin.com/in/phayung-meesad-5b035194/"},
+            {"name": "Dr. Durga Mohapatra", "image": "images/speakers/images/Durga Prasad Mohapatra.jpeg", "profile":"https://www.linkedin.com/in/durga-prasad-mohapatra-9066932a5/"},
+             {"name": "Dr. Durga Mohapatra", "image": "images/speakers/images/Durga Prasad Mohapatra.jpeg", "profile":"https://www.linkedin.com/in/durga-prasad-mohapatra-9066932a5/"}
+        ]
+    }
+    
+]

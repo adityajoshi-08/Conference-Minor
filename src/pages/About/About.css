@@ -20,10 +20,7 @@
     margin-bottom: 5vh;
 }
 
-.aboutUsTagText {
-    font-size: 60px;
-    color: #4874d0;
-}
+
 
 .aboutUsTagHR {
     width: 30%;
@@ -38,7 +35,7 @@
 }
 
 .aboutConferenceSection {
-    margin: 3vh 0;
+    margin: 2vh 0;
 }
 
 .aboutConferenceSectionContent {

@@ -3,6 +3,7 @@ import "./About.css"
 import Nav from '../../components/Nav/Nav'
 import Footer from '../../components/Footer/Footer'
 import Objective from '../../components/Objective/Objective'
+import Heading from '../../components/Heading/Heading'
 
 export default function About() {
 
@@ -29,11 +30,7 @@ export default function About() {
       <Nav />
       <div class="aboutMain">
         <div class="aboutContainer">
-            <div class="aboutUsTag">
-                <hr class="aboutUsTagHR" />
-                <h2 class="aboutUsTagText">ABOUT ICCAI</h2>
-                <hr class="aboutUsTagHR" />
-            </div>
+            <Heading title="About ICCAI" />
 
             <div class="aboutConference">
                 <div class="aboutConferenceSection">
