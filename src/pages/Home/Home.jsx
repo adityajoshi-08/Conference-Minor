@@ -52,15 +52,18 @@ export default function Home() {
 
       <div className="main"
         style={{
-          background: `url("${process.env.PUBLIC_URL}/images/Backgrounds/${backgrounds[backgroundIndex]}.jpg")`,
-          // backgroundSize: 'cover',
-          height: '100vh',
-          width: '100vw',
-          textAlign: 'center',
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          alignItems: 'center',
+          backgroundImage: `url("${process.env.PUBLIC_URL}/images/Backgrounds/${backgrounds[backgroundIndex]}.jpg")`,
+           height: '100vh',
+            width: '100vw',
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+            // backgroundAttachment: 'fixed',
+            backgroundPosition: 'center',
+            textAlign: 'center',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'center',
         }}>
         <div class="conferceInfoMain">
           <span>Join us for the</span><br />

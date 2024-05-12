@@ -55,12 +55,7 @@ nav .container {
     font-weight: 600;
 }
 
-.main {
-    width: 100vw;
-    transition: background-image 2s ease-in-out;
-    background-repeat: no-repeat;
 
-}
 
 .main .registrations {
     padding: 5px;
