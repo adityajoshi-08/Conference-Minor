@@ -18,7 +18,7 @@
     flex-wrap: wrap;
     flex-basis: 100%;
     justify-content: space-evenly;
-    max-width: 70vw;
+    max-width: 80vw;
 }
 
 .speakerPhotoRow a img {
@@ -185,11 +185,13 @@ nav .container {
     display: flex;
     text-align: center;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .CFP {
     background: url("../../../public/images/Backgrounds/bg-pattern-3.jpg");
-    width: 25%;
+    max-width: 25%;
+    min-width: 20%;
     padding: 25px;
     border-radius: 25px;
     display: flex;
@@ -211,7 +213,7 @@ footer {
     color: #fff;
 }
 
-@media only screen and (max-width: 900px) and (min-width: 481px){
+@media only screen and (max-width: 900px) and (min-width: 600px){
     #partners {
         display: flex;
         flex-direction: column;
@@ -219,14 +221,27 @@ footer {
 }
 
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
     #partners {
             display: flex;
             flex-direction: column;
         }
-        
+
     .organisingPartners, .sponsorPartners {
         flex-direction: column;
+    }
+
+    .speakerPhotoRow {
+        flex-direction: column;
+    }
+
+    .joinUsContainerRow {
+        flex-direction: column;
+    }
+    .joinUsContainerRow * {
+        margin: auto;
+        max-width: 70%;
+        min-width: 50%;
     }
 
 }

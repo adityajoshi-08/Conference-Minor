@@ -33,11 +33,12 @@
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 5vh;
+    text-align: center;
 }
 
 .panelSelectorContent {
     cursor: pointer;
-    padding: 5px 20px;
+    padding: 10px 25px;
     border-radius: 2rem;
 }
 
@@ -52,4 +53,11 @@
 #active {
     background-color: black;
     color: white;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .panelGrid {
+        flex-direction: column;
+    }
 }

@@ -49,6 +49,10 @@ a:hover {
 
 .menuToggle {
     display: none;
+    position: fixed;
+
+    top: 0;
+    right: 7vw;
 }
 
 /* Mobile Menu Styles */
@@ -79,7 +83,7 @@ a:hover {
             flex-direction: column;
             align-items: center;
             justify-content: space-evenly;
-            position: absolute;
+            position: fixed;
             top: 0;
             right: -7vw;
             width: 40vw;
