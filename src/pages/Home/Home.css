@@ -142,7 +142,7 @@ nav .container {
 
 .orgyPartner {
     text-align: center;
-    font-size: x-large;
+    font-size: 1.5rem;
     color: #443f3f;
 }
 
@@ -209,4 +209,25 @@ footer {
     align-items: center;
     background-color: #000;
     color: #fff;
+}
+
+@media (max-width: 900px) {
+    #partners {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 480px) {
+    #partners {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .organisingPartners, .sponsorPartners {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
 }
