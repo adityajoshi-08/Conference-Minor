@@ -57,7 +57,7 @@ export default function Home() {
             width: '100vw',
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
-            backgroundAttachment: 'fixed',
+            backgroundAttachment: 'inherit',
             backgroundPosition: 'center',
             textAlign: 'center',
             display: 'flex',

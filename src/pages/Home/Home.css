@@ -55,7 +55,9 @@ nav .container {
     font-weight: 600;
 }
 
-
+.main {
+    transition: background 2s ease-in-out;
+}
 
 .main .registrations {
     padding: 5px;
