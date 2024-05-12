@@ -211,7 +211,7 @@ footer {
     color: #fff;
 }
 
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) and (min-width: 481px){
     #partners {
         display: flex;
         flex-direction: column;
@@ -219,15 +219,14 @@ footer {
 }
 
 
-@media (max-width: 480px) {
+@media only screen and (max-width: 480px) {
     #partners {
-        display: flex;
+            display: flex;
+            flex-direction: column;
+        }
+        
+    .organisingPartners, .sponsorPartners {
         flex-direction: column;
     }
 
-    .organisingPartners, .sponsorPartners {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-    }
 }
