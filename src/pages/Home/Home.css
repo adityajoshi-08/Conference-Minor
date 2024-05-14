@@ -157,7 +157,7 @@ nav .container {
 #contact {
     background: url("../../../public/images/Backgrounds/bg-pattern-3.jpg");
     background-repeat: repeat;
-    height: 35vh;
+    height: fit-content;
     display: flex;
     align-items: center;
     padding: 40px;
@@ -183,7 +183,7 @@ nav .container {
 }
 
 .joinUsContainerRow {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     display: flex;
     text-align: center;
     justify-content: space-around;
@@ -198,6 +198,8 @@ nav .container {
     border-radius: 25px;
     display: flex;
     flex-direction: column;
+    margin: 1.5rem;
+    margin-top: 1rem;
 }
 
 .CFP button {
@@ -245,6 +247,14 @@ footer {
         margin: auto;
         max-width: 70%;
         min-width: 50%;
+    }
+
+    .CFP {
+        margin-bottom: 2rem;
+    }
+
+    .content {
+        padding: 2rem;
     }
 
 }

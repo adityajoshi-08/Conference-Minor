@@ -5,7 +5,7 @@
     max-width: 250px;
     max-height: 250px;
     /* border: 1px solid black; */
-    padding: 3%;
+    padding: 3rem;
     text-align: center;
     flex-basis: 100%;
     justify-content: space-between;
@@ -25,4 +25,14 @@
     width: 50%;
 
     /* Adjust the percentage value as needed */
+}
+
+@media only screen and (max-width: 600px) {
+    .iconAreaImage {
+        width: 40%;
+    }
+
+    .objective {
+        font-size: 1.1rem;
+    }
 }

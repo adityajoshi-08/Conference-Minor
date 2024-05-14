@@ -20,3 +20,37 @@
     font-size: 20px;
     font-weight: 500;
 }
+
+@media only screen and (max-width: 900px) and (min-width: 600px) {
+    .trackDiv {
+        width: 25vw;
+        height: 30vw;
+        overflow: hidden;
+    }
+
+    .trackContent {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .trackIconArea img {
+        width: 58%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .trackDiv {
+        width: 65vh;
+        height: 70vw;
+        overflow: hidden;
+    }
+
+    .trackIconArea img {
+        width: 60%;
+    }
+
+    .trackContent {
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+}
