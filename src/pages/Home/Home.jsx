@@ -154,19 +154,19 @@ export default function Home() {
             <div class="CFP">
               <h4>Call for papers!</h4>
               <p>Join us as a speaker for the ICCAI conference</p>
-              <button>Click here</button>
+              <button><a href="https://docs.google.com/forms/d/1vtk-NXOXeshFtnwpNMUyneOlIn8dGicm6GlNdO__ST4/edit">Click here</a></button>
             </div>
 
             <div class="CFP">
               <h4>Call for sponsors!</h4>
               <p>Sponsor the ICCAI and create an impact on the community</p>
-              <button>Click here</button>
+              <button><a href="https://docs.google.com/forms/d/1vtk-NXOXeshFtnwpNMUyneOlIn8dGicm6GlNdO__ST4/edit">Click here</a></button>
             </div>
 
             <div class="CFP">
               <h4>Call for volunteers!</h4>
               <p>Join our dynamic team and help us make an impact</p>
-              <button>Click here</button>
+              <button><a href="https://docs.google.com/forms/d/1vtk-NXOXeshFtnwpNMUyneOlIn8dGicm6GlNdO__ST4/edit">Click here</a></button>
             </div>
           </div>
         </div>
