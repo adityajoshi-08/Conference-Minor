@@ -20,7 +20,7 @@ export default function Nav() {
             <a href="/">HOME</a>
           </li>
           <li>
-            <a href="/about">ABOUTn</a>
+            <a href="/about">ABOUT</a>
           </li>
           <li>
             <a href="/#partners">PARTNERS</a>
